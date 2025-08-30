@@ -6,45 +6,44 @@
   <title>5 Things to Know About Rattlesnakes and Their Babies</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="dist/style.css">
+  <link rel="icon" href="favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-
-  <header class="sus-big-red sus-arizona-header" id="the-red-header" role="banner">
+  <script src="script.js" defer></script>
+  
+  <header class="header_red" id="the-red-header" role="banner">
     <div class="container">
       <div class="row">
-        <img src="dist/UniversityLogoTop.png" alt="Not the real logo, I'm using it for educational purposes" id="top-logo">
+        <img src="UniversityLogoTop.png" alt="Not the real logo, I'm using it for educational purposes" id="top-logo">
       </div>
-      <div class="red_buttons" id="menu_buttons">
-        <button type="button" id="drop-menu" onclick="openNav()">Menu</button>
+      <div class="red_buttons" id="menu-buttons">
+        <button type="button" id="drop-menu" onclick="openNav()">&#9776;</button>
       </div>
     </div>  
   </header>
 
-  <article id="snake_bite">
+  <article id="snake-bite">
+
     <section id="article-title">
-      <img src="dist/UniversityLogo.png" alt="Logo of The University of Arizona" id="logo">
-      <h1 id="title-of-article">5 Things to Know About Rattlesnakes and Their Babies</h1>
+      <span id="logo-container"><img src="UniversityLogo.png" alt="Logo of The University of Arizona" id="logo"></span>
+      <span id="title-container"><h1 id="title-of-article">5 Things to Know About Rattlesnakes and Their Babies</h1></span>
     </section>
-    <p>UA College of Pharmacy | Aug. 6, 2014</p>
+
+    <p><strong>UA College of Pharmacy | Aug. 6, 2014</strong></p>
     
     <p>Arguably, snake season is year-round in Arizona, a state known for its rattlers.
        But baby rattlesnakes are born in July and August, making these two months especially
        dangerous for hikers, gardeners, children and others at high risk of exposure to
        rattlesnake bites.</p>
-    
-    <span class="imgstack">
-      <img src="dist/SnakeBite.jpg" alt="Snake bite on side of child's foot" id="bitepic">
-      <p class="imgcite">Image courtesy of <a href="https://en.wikipedia.org/wiki/Snakebite" target="_blank">
+
+    <!--For text wrapping purposed-->
+    <span class="img_stack">
+      <img src="SnakeBite.jpg" alt="Snake bite on side of child's foot" id="bite-pic">
+      <p class="img_descrip">Snake bit on a side of a child's foot</p>
+      <p class="img_cite">Image courtesy of <a href="https://en.wikipedia.org/wiki/Snakebite" target="_blank" class="page_links">
          en.wikipedia.org</a>.</p>
     </span>
 
@@ -54,7 +53,7 @@
    
     <p>Specialists answering the phones at the center regularly receive calls from Arizonans of all ages who don't realize 
        they were bitten by a rattler. The poison center urges anyone who feels a mysterious sting, pinch or bite while
-       outdoors to immediately call the center at <a href="tel:8002221222" id="poisontele">800-222-1222.</a></p>
+       outdoors to immediately call the center at <a href="tel:8002221222" id="poisontele" class="page_links">800-222-1222.</a></p>
 
     <p>"We will ask a few questions that will help you either identify possible snakebite or eliminate it," said Keith Boesen,
         director of the Arizona Poison and Drug Information Center. "With snakebite, the sooner the medical treatment, 
@@ -75,17 +74,36 @@
     </ol>
   </article>
 
+  <!--Two bottom logos and bottom navigation-->
   <footer>
+    <section id="bottom-container">
+      <div id="row-bottom-left">
+        <img src="UniversityLogo.png" alt="Not the real logo, I'm using it for educational purposes" id="bottom-logo-left">
+      </div>
     <nav id="resources">
       <p>
-        <a href="https://www.zybooks.com/" target="_blank" class="links">zyBooks</a>
-        <a href="https://www.wikipedia.org/" target="_blank" class="links">Wikipedia</a>
-        <a href="https://www.linkedin.com/" target="_blank" class="links">LinkedIn</a>
+        <a href="https://www.zybooks.com/" target="_blank" class="page_links">zyBooks</a>
+        <a href="https://www.wikipedia.org/" target="_blank" class="page_links">Wikipedia</a>
+        <a href="https://www.linkedin.com/" target="_blank" class="page_links">LinkedIn</a>
       </p>
     </nav>
+    <div id="row-bottom-right">
+        <img src="UniversityLogo.png" alt="Not the real logo, I'm using it for educational purposes" id="bottom-logo-right">
+      </div>
+    </section>
   </footer>
 
-  <script src="dist/script.js"></script>
+  <!--The translucent overlay and sidebar-->
+  <div id="background-overlay" name="background-overlay"></div>
+
+  <div id="my-side-nav" class="side_nav">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNav()">&times;</a>
+    <a href="https://www.zybooks.com/" target="_blank">zyBooks</a>
+    <a href="https://www.wikipedia.org/" target="_blank">Wikipedia</a>
+    <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+  </div>
+
+
 </body>
 
 </html>
